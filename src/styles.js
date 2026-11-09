@@ -493,6 +493,11 @@ export const PAGE_CSS = `
   min-width: 0;
 }
 
+/* 字段行的按钮由 align-items: stretch 撑到与输入框同高。 */
+.ql-field-row .ql-button {
+  height: auto;
+}
+
 .ql-input,
 .ql-textarea {
   box-sizing: border-box;
@@ -522,6 +527,12 @@ export const PAGE_CSS = `
 .ql-input::placeholder,
 .ql-textarea::placeholder {
   color: var(--dsw-alias-label-caption);
+}
+
+/* 输入框的焦点态只用边框表示，不再叠加页面级焦点轮廓。 */
+.ql-input:focus-visible,
+.ql-textarea:focus-visible {
+  outline: none;
 }
 
 .ql-input:focus,

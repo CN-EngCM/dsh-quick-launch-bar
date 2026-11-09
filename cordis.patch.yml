@@ -1,0 +1,4 @@
+# dsh-quick-launch-bar 的 bundle patch：向当前配置插入插件行。
+- insert:
+    - id: quick-launch
+      name: dsh-quick-launch-bar

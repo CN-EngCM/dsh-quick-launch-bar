@@ -1,0 +1,6 @@
+tools/node_modules/
+tools/e2e/artifacts/
+tools/e2e/playwright-report/
+node_modules/
+*.log
+.test-token

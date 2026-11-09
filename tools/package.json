@@ -1,0 +1,21 @@
+{
+  "name": "dsh-quick-launch-bar-tools",
+  "private": true,
+  "type": "module",
+  "description": "dsh-quick-launch-bar 的客户端构建工具链。",
+  "scripts": {
+    "build": "node build.mjs",
+    "test:unit": "node --test unit/host-core.test.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:list": "playwright test --list"
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "dockview": "^8.9.0",
+    "esbuild": "^0.28.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0"
+  }
+}
